@@ -1,0 +1,4 @@
+<div *ngIf="res[0].meta.code == 200" class="user_photos">
+  <img class="photo" *ngFor="let photo of res[0].data"
+       src="{{photo.images.low_resolution.url}}" alt="">
+</div>

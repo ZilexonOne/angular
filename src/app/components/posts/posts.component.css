@@ -1,0 +1,20 @@
+.likes {
+ display: none;
+}
+
+.user_photos {
+  display: flex;
+  /*justify-content: space-between;*/
+  flex-wrap: wrap;
+  width: 960px;
+}
+
+.photo {
+  object-fit: none; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  height: 300px;
+  width: 300px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}

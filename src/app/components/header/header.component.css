@@ -1,0 +1,44 @@
+.header {
+  width: 50%;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.avatar {
+
+}
+
+.avatar_picture {
+  border-radius: 50%;
+}
+
+.account_data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.user_data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.h_data {
+  margin: 0px;
+}
+
+.button_edit_profile {
+  margin-left: 20px;
+}
+
+.button_settings_profile {
+
+}
+
+.follow_data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
