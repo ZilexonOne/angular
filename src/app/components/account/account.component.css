@@ -1,3 +1,118 @@
+.logo {
+  width: 100%;
+  height: 75px;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0,0,0,.0975);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  z-index: 3;
+}
+
+@keyframes bounceOut {
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  50%,
+  55% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+}
+
+.bounceOut {
+  animation-duration: 0.5s;
+  animation-name: bounceOut;
+}
+
+.no_header {
+  margin-top: 140px;
+}
+
+.left_logo {
+  display: flex;
+}
+
+.app_logo {
+  height: 24px;
+  width: 24px;
+  background: url('../../../assets/sprite.png') -239px -202px;
+}
+
+.line_logo {
+  height: 28px;
+  width: 1px;
+  background-color: #262626;
+  margin-left: 17px;
+  margin-right: 17px;
+}
+
+.inst_logo {
+  height: 30px;
+  width: 105px;
+  background: url('../../../assets/sprite.png') -93px -71px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 215px;
+  height: 26px;
+  background: #fafafa;
+  border: solid 1px #dbdbdb;
+  border-radius: 3px;
+}
+
+.search_input {
+  background: #fafafa;
+  text-align: center;
+  border: 0px;
+  outline: none;
+}
+
+.search_logo {
+  height: 12px;
+  width: 11px;
+  background: url('../../../assets/sprite.png') -336px -167px;
+}
+
+.right_logo {
+  display: flex;
+  justify-content: space-between;
+  width: 132px;
+  padding-left: 24px;
+}
+
+.compass {
+  height: 25px;
+  width: 25px;
+  background: url('../../../assets/sprite.png') -51px -285px;
+}
+
+.likes {
+  height: 24px;
+  width: 26px;
+  background: url('../../../assets/sprite.png') -270px -234px;
+}
+
+.user {
+  height: 26px;
+  width: 24px;
+  background: url('../../../assets/sprite.png') -271px -103px;
+}
+
 .data {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -11,6 +126,26 @@
 }
 
 .line {
-  width: 940px;
-  border-top: 1px solid black;
+  width: 935px;
+  border-top: 1px solid rgba(0,0,0,.0975);
+}
+
+.btn_scroll {
+  position: fixed;
+  right: 30px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.top {
+  bottom: 70px;
+}
+
+.bottom {
+  bottom: 30px;
 }

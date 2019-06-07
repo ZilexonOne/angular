@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class LoginService {
+
   constructor() { }
   click() {
     window.location.href = 'https://api.instagram.com/oauth/authorize/' +

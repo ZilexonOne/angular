@@ -1,5 +1,5 @@
 .header {
-  width: 50%;
+  width: 730px;
   height: 150px;
   display: flex;
   justify-content: space-around;
@@ -34,7 +34,7 @@
 }
 
 .button_settings_profile {
-
+  background-color: #fafafa;
 }
 
 .follow_data {

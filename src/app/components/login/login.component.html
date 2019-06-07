@@ -1,3 +1,40 @@
+<div class="div_logo">
+  <div class="logo"></div>
+</div>
+
 <div class="login">
-  <button class="btn_goToInst" mat-stroked-button (click)="goToInst()">Go to Instagram</button>
+  <h3 class="h3">Бяка-кака, просто, чтобы потрогать валидацию</h3>
+  <p></p>
+  <form>
+    <mat-accordion hideToggle="true" class="accordion">
+      <mat-expansion-panel disabled="true" [expanded]="opened">
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            <mat-form-field>
+              <input matInput placeholder="Name" id="name" name="name" class="form-control"
+                     required minlength="4"
+                     [(ngModel)]="asdfg" #name="ngModel">
+            </mat-form-field>
+          </mat-panel-title>
+          <mat-panel-description class="description">
+            <button mat-stroked-button class="go" (click)="view()">Go</button>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div *ngIf="name.errors.required">
+          Name is required.
+        </div>
+        <div *ngIf="name.errors.minlength">
+          Name must be at least 4 characters long.
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+
+  </form>
+  <p></p>
+  <h3 class="h3">Основное тут</h3>
+  <h3 class="h3">|</h3>
+  <h3 class="h3">|</h3>
+  <h3 class="h3">|</h3>
+  <h3 class="h3">∨</h3>
+  <button mat-stroked-button class="btn_goToInst" (click)="goToInst()">Go to Instagram</button>
 </div>

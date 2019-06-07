@@ -7,10 +7,17 @@ import { LoginService } from '../../services/login/login.service';
   styleUrls: ['./login.component.css'],
   providers: [ LoginService ]
 })
+
 export class LoginComponent implements OnInit {
-  constructor(private loginService: LoginService) { }
+  asdfg: string;
+  opened = false;
+  constructor(private loginService: LoginService ) { }
   ngOnInit() {}
   goToInst() {
     this.loginService.click();
+  }
+  view() {
+    this.opened = !this.opened;
+    console.log(this.opened);
   }
 }

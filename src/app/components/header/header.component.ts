@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { AccountComponent } from '../account/account.component';
+import { Component, OnInit, Input } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import {map} from 'rxjs/operators';
 
 @Component({
   selector: 'app-header',
@@ -7,10 +8,9 @@ import { AccountComponent } from '../account/account.component';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  res = [];
-  constructor(private accountComponent: AccountComponent) { }
+  @Input() res = [];
+  constructor(private http: HttpClient) { }
   ngOnInit() {
-    this.res = this.accountComponent.res;
     console.log(this.res);
   }
 }

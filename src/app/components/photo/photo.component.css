@@ -1,0 +1,70 @@
+.post {
+  position: relative;
+  height: 293px;
+  width: 293px;
+  /*background-color: black;*/
+}
+
+.logo_type {
+  position: absolute;
+}
+
+.video {
+  top: 8px;
+  right: 4px;
+  height: 18px;
+  width: 24px;
+  background: url('../../../assets/post_type_sprite.png') -4px -41px;
+}
+
+.carousel {
+  top: 6px;
+  right: 6px;
+  height: 20px;
+  width: 20px;
+  background: url('../../../assets/post_type_sprite.png') -6px -6px;
+}
+
+.photo {
+  object-fit: cover; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  height: 293px;
+  width: 293px;
+}
+
+.hovered {
+  opacity: 0.3;
+}
+
+.likes_comments {
+  top: 45%;
+  left: 28%;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter {
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 45px;
+}
+
+.likes {
+  margin-right: 50px;
+  height: 26px;
+  width: 26px;
+  background: url('../../../assets/sprite.png') -270px -233px;
+}
+
+.comments {
+  margin-right: 50px;
+  height: 26px;
+  width: 26px;
+  background: url('../../../assets/sprite.png') -160px -201px;
+}

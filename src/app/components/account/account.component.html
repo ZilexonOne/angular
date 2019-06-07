@@ -1,9 +1,41 @@
-<app-header class="data"></app-header>
+<div class="all">
+  <div [class.bounceOut]="flag == true" class="logo">
 
-<div class="div_line">
-  <div class="line">
+    <div class="left_logo">
+      <div class="app_logo"></div>
+      <div class="line_logo"></div>
+      <div class="inst_logo"></div>
+    </div>
+
+    <div class="search">
+      <div class="search_logo"></div>
+      <input class="search_input" type="text" autocapitalize="none" placeholder="Поиск">
+    </div>
+
+    <div class="right_logo">
+      <div class="compass"></div>
+      <div class="likes"></div>
+      <div class="user"></div>
+    </div>
 
   </div>
-</div>
 
-<app-posts class="data"></app-posts>
+  <div class="no_header">
+    <app-header class="data" [res]="res"></app-header>
+
+    <div class="div_line">
+      <div class="line">
+
+      </div>
+    </div>
+
+    <app-posts class="data"></app-posts>
+
+    <button mat-stroked-button class="btn_scroll top" (click)="scroll_to_top()">
+      <img src="../../assets/top.png" alt="">
+    </button>
+    <button mat-stroked-button class="btn_scroll bottom" (click)="scroll_to_bottom()">
+      <img src="../../assets/bottom.png" alt="">
+    </button>
+  </div>
+</div>

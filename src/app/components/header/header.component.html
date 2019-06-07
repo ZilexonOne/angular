@@ -8,7 +8,7 @@
 
     <div class="user_data">
       <h2 class="h_data">{{res[0].data.username}}</h2>
-      <button mat-stroked-button class="button_edit_profile">
+      <button mat-stroked-button class="button_edit_profile" routerLink="/setting">
         Редактировать профиль
       </button>
       <button mat-flat-button class="button_settings_profile">
@@ -18,8 +18,8 @@
 
     <div class="follow_data">
       <h4 class="h_data">{{res[0].data.counts.media}} публикаций</h4>
-      <h4 class="h_data">{{res[0].data.counts.follows}} подписчиков</h4>
-      <h4 class="h_data">Подписки: {{res[0].data.counts.followed_by}}</h4>
+      <h4 class="h_data">{{res[0].data.counts.followed_by}} подписчиков</h4>
+      <h4 class="h_data">Подписки: {{res[0].data.counts.follows}}</h4>
     </div>
 
     <div>

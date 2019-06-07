@@ -1,0 +1,9 @@
+<div class="post">
+  <img appHover class="photo" src="{{data.images.standard_resolution.url}}" alt="">
+  <div *ngIf="type == 'video'" class="logo_type video"></div>
+  <div *ngIf="type == 'carousel'" class="logo_type carousel"></div>
+  <div class="logo_type likes_comments">
+    <div class="likes"><div class="counter">{{data.likes.count}}</div></div>
+    <div class="comments"><div class="counter">{{data.comments.count}}</div></div>
+  </div>
+</div>
